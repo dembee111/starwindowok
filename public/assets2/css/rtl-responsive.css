@@ -1,0 +1,120 @@
+/* (1366x768) WXGA Display */
+@media  screen and (min-width: 1366px) {
+    .col-md-offset-2 {
+        margin-right: 16.66666667%;
+    }
+}
+/* (1199x768) WXGA Display */
+@media  screen and (max-width: 1199px) {
+
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1366px) {
+    .col-md-offset-2 {
+        margin-right: 16.66666667%;
+    }
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+	.newsletter-form form {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	.about-img {
+		margin-bottom: 0;
+	}
+	.col-sm-offset-1 {
+		margin-right: 8.33333333%;
+	}
+	.ptb-140 {
+		padding: 100px 0px;
+	}
+}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+.container{width:100%}
+    body{
+        margin: 0px !important;
+    }
+    .header-area {
+        position: static !important;
+    }
+    .service-wrap,.portfolio-wrap,.team-wrap,.blog-wrap,.footer-widget {
+        margin-bottom: 30px;
+    }
+    .service-area,.porftolio-area,.team-area,.blog-area,.footer-top{
+        padding: 100px 0px 70px;
+    }
+    .about-img {
+        margin-bottom: 40px;
+    }
+    .section-title p {
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+    .faq-form.form-style {
+        margin-top: 40px;
+    }
+    .responsive-menu-wrap .slicknav_btn {
+    	padding: 28px 10px;
+    }
+    .responsive-menu-wrap .slicknav_nav {
+    	right:9px;
+    }
+	.col-md-offset-3 {
+		margin-right: 0;
+	}
+	.header-middle-right ul li {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.header-middle-right ul li:first-child {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.comment-main-area {
+		margin: 0px 0px 0px 0px;
+	}
+	.sewl-comments-meta h4 span {
+		margin: 11px 0 0px 0px;
+	}
+	.ptb-140 {
+		padding: 100px 0px;
+	}
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/* Large Mobile :375px. */
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+.container {width:100%}
+.responsive-menu-wrap .slicknav_nav {
+	width: 350px;
+}
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:100%}
+.responsive-menu-wrap .slicknav_nav {
+	width: 450px;
+}
+}
+/* Tablet desktop :768px. */
+@media (min-width: 600px) and (max-width: 767px) {
+.col{
+    width: 50%;
+    float: right;
+}
+.responsive-menu-wrap .slicknav_btn {
+	padding: 28px 28px;
+	width: 100px;
+}
+}
