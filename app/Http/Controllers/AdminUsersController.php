@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Phone;
 use App\Photo;
 use App\Role;
 use App\User;
@@ -89,9 +90,13 @@ class AdminUsersController extends Controller
 
         $user = User::findOrFail($id);
 
+        $phone = User::findOrFail($id)->phone;
+
+       
+
         $roles = Role::all();
 
-        return view('back.users.edit', compact('user', 'roles'));
+        return view('back.users.edit', compact('user', 'roles', 'phone'));
     }
 
     /**
@@ -142,10 +147,13 @@ class AdminUsersController extends Controller
         }
         
        
-  
-        $user->update($input);
+        
 
+        $user->update($input);        
 
+        $user->phone->update([
+            'phone' => $input['phone']
+        ]);
 
         Session::flash('updated_user', 'Хэрэглэгчийн мэдээлэл амжилттай засагдлаа');
 

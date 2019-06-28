@@ -45,6 +45,18 @@
                             </div>
                              
                         </div>
+                        <div class="row form-group">
+                            <div class="col col-md-3">
+                                <label for="phone" class=" form-control-label">Утас</label>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <input type="text" id="phone" name="phone" placeholder="Утас.." value="{{ $phone->phone }}" 
+                                class="form-control" class="@error('phone') is-invalid @enderror" required autocomplete="phone" autofocus/>
+                                <span class="help-block">Хэрэглэгчийн утас</span>
+                                
+                            </div>
+                             
+                        </div>
 
                         <div class="row form-group">
                             <div class="col col-md-3">
@@ -92,8 +104,16 @@
                             </div>
                             <div class="col-12 col-md-9">
                                 <select name="role_id" id="select" class="form-control">
+
                                         @foreach($roles as $role)
-                                            <option value="{{ $role->id }}">{{ $role->name }}</option>  
+                                         @if($role->name == $user->role->name)
+                                            <option selected value="{{ $role->id }}">{{ $role->name }}</option>  
+                                         
+                                         @else
+                                            <option value="{{ $role->id }}">{{ $role->name }}</option>
+                                         @endif
+
+
                                         @endforeach                                     
                                 </select>
                             </div>
