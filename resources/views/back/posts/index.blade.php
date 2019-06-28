@@ -7,7 +7,7 @@
         
             <div class="table-data__tool-right">
                 <a href="{{ route('posts.create')}}" class="au-btn au-btn-icon au-btn--green au-btn--small">
-                    <i class="zmdi zmdi-plus"></i>Мэдээний жагсаалт</a>
+                    <i class="zmdi zmdi-plus"></i>Мэдээ нэмэх</a>
                 
             </div>
         </div>
