@@ -20,7 +20,7 @@
                       @foreach($logs as $log)
                         <tr>
                             <td>{{ $log->id }}</td>
-                            <td>{{ $log->user->name }}</td>
+                            <td>{{ $log->user ? $log->user->name : 'Энэ хэрэглэгч устгагдсан байна'}}</td>
                             <td>{{ $log->log }}</td>
                             <td>{{ $log->created_at }}</td> 
                             <td>{{ $log->updated_at }}</td>                   

@@ -3606,6 +3606,11 @@ h3.blog-title::after{
   color: #296dc1;
 }
 
+.table-data3 tbody td{
+  font-size: 5px;
+  padding: 2px !important;
+}
+
 
 
 

@@ -36,7 +36,7 @@
               </div>
           @endif
         <div class="table-responsive m-b-40">
-            <table class="table table-data2">
+            <table class="table table-sm table-borderless table-data3">
                 <thead>
                     <tr>                    
                      
@@ -56,8 +56,8 @@
                 <tbody>
                     @if(count($orders) > 0)
                     @foreach($orders as $order)
-                    <tr class="tr-shadow">                        
-                                                <td>{{ $order->window_type }}</td>
+                    <tr>                        
+                        <td>{{ $order->window_type }}</td>
                         <td>{{ $order->window_size }}</td> 
                         <td>{{ $order->window_price }}</td>  
                         <td>{{ $order->window_quantity }}</td>
