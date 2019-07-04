@@ -89,7 +89,7 @@
          @yield('content')
         <!--End Main Content-->
         
-           {{--  @include('front.layouts.chat.chat') --}}
+            @include('front.layouts.chat.chat')
         
         
 		<!-- footer-area start-->

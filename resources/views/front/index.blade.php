@@ -116,7 +116,7 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="video-wrap text-center">
-                                    <a href="https://www.youtube.com/watch?v=-gxDGYAzjIg" class="video-popup">
+                                    <a href="https://www.youtube.com/watch?v=-gxDGYAzjIg" class="video-popup" >
                                         <i class="fa fa-play"></i>
                                     </a>
                                 </div>
@@ -126,6 +126,8 @@
                 </div>
             </div>
         </section>
+
+
 
               <!-- team-area start -->
     <section class="team-area ptb-140">
